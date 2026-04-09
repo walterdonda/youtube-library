@@ -28,6 +28,7 @@ def progress_hook(d):
 
 # Opciones de descarga, documentación en https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py
 ydl_opts = {
+    "js_runtimes": {'node': {}},
     "quiet":True,
     "format": "(bestvideo[width>=1920]/bestvideo)+bestaudio/best",
     "download_archive": "ya_descargados.txt",
